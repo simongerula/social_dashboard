@@ -44,8 +44,8 @@ body {
 }
 #dw-mode {
     align-self: baseline;
-    width: 50px;
-    height: 26px;
+    width: 3rem;
+    height: 1.6rem;
     appearance: none;
     background-image: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     background-color: rgb(174, 179, 203);
@@ -69,7 +69,7 @@ body {
     transition: .5s;
 }
 #dw-mode:checked::before {
-    margin-left: 27px;
+    margin-left: 1.5rem;
 }
 
 /* SOCIAL CARDS */
