@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="src/css/styles.css">
+  <!-- GoogleFonts - Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+</head>
+<body class="">
+  <div class="container">
+    <div class="dashboard">
+      <header id="dashboard-header" class="dashboard-header">
+        <div class="brand">
+          <h2>Social Media Dashboard</h2>
+          <p class="t-followers">Total Followers: 23,004</p>
+        </div>
+        <div class="dw-mode-div">
+          <label class="mode-label">Dark Mode</label>
+          <input type="checkbox" id="dw-mode">
+        </div>
+      </header>
+      <div class="card-grid">
+        <div class="social-card">
+          <p class="user"><img class="social-icon" src="src/images/icon-facebook.svg" alt=""><span class="opacity-text">@nathanf</span></p>
+          <p class="stats-number">1987</p>
+          <p class="stats-type"><span class="opacity-text">FOLLOWERS</span></p>
+          <p class="stats-up"><img class="row-icon" src="src/images/icon-up.svg" alt="">12 today</p>
+        </div>
+        <div class="social-card">
+          <p class="user"><img class="social-icon" src="src/images/icon-twitter.svg" alt=""><span class="opacity-text">@nathanf</span></p>
+          <p class="stats-number">1044</p>
+          <p class="stats-type"><span class="opacity-text">FOLLOWERS</span></p>
+          <p class="stats-up"><img class="row-icon" src="src/images/icon-up.svg" alt="">99 Today</p>
+        </div>
+        <div class="social-card">
+          <p class="user"><img class="social-icon" src="src/images/icon-instagram.svg" alt=""><span class="opacity-text">@realnathanf</span></p>
+          <p class="stats-number">11k</p>
+          <p class="stats-type"><span class="opacity-text">FOLLOWERS</span></p>
+          <p class="stats-up"><img class="row-icon" src="src/images/icon-up.svg" alt="">1099 Today</p>
+        </div>
+        <div class="social-card">
+          <p class="user"><img class="social-icon" src="src/images/icon-youtube.svg" alt=""><span class="opacity-text">Nathan F.</span></p>
+          <p class="stats-number">8239</p>
+          <p class="stats-type"><span class="opacity-text">SUBSCRIBERS</span></p>
+          <p class="stats-down"><img class="row-icon" src="src/images/icon-down.svg" alt="">144 Today</p>
+        </div>
+      </div>
+      <div class="overview-container">
+        <h2>Overview - Today</h2>
+        <div class="overview-grid">
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Page Views</span><img class="overview-icon" src="/src/images/icon-facebook.svg" alt=""></p>
+            <p class="overview-bottom">87 <span class="overview-porcentage-up"><img class="overview-row-icon" src="src/images/icon-up.svg" alt="">3%</span></p>
+          </div>
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Likes</span><img class="overview-icon" src="/src/images/icon-facebook.svg" alt=""></p>
+            <p class="overview-bottom">52 <span class="overview-porcentage-down"><img class="overview-row-icon" src="src/images/icon-down.svg" alt="">2%</span></p>
+          </div>
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Likes</span><img class="overview-icon" src="/src/images/icon-instagram.svg" alt=""></p>
+            <p class="overview-bottom">5462 <span class="overview-porcentage-up"><img class="overview-row-icon" src="src/images/icon-up.svg" alt="">2257%</span></p>
+          </div>
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Profile Views</span> <img class="overview-icon" src="/src/images/icon-instagram.svg" alt=""></p>
+            <p class="overview-bottom">52k <span class="overview-porcentage-up"><img class="overview-row-icon" src="src/images/icon-up.svg" alt="">1375%</span></p>
+          </div>
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Retweets</span><img class="overview-icon" src="/src/images/icon-twitter.svg" alt=""></p>
+            <p class="overview-bottom">117 <span class="overview-porcentage-up"><img class="overview-row-icon" src="src/images/icon-up.svg" alt="">303%</span></p>
+          </div>
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Likes</span><img class="overview-icon" src="/src/images/icon-twitter.svg" alt=""></p>
+            <p class="overview-bottom">507 <span class="overview-porcentage-up"><img class="overview-row-icon" src="src/images/icon-up.svg" alt="">563%</span></p>
+          </div>
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Likes</span><img class="overview-icon" src="/src/images/icon-youtube.svg" alt=""></p>
+            <p class="overview-bottom">107 <span class="overview-porcentage-down"><img class="overview-row-icon" src="src/images/icon-down.svg" alt="">19%</span></p>
+          </div>
+          <div class="overview-card">
+            <p class="overview-top"><span class="opacity-text">Total Views</span><img class="overview-icon" src="/src/images/icon-youtube.svg" alt=""></p>
+            <p class="overview-bottom">1407 <span class="overview-porcentage-down"><img class="overview-row-icon" src="src/images/icon-down.svg" alt="">12%</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--
+  Social Media Dashboard
+  Total Followers: 23,004
+
+  Dark Mode
+
+  
+
+  @nathanf
+  1987
+  Followers
+  12 Today
+
+  @nathanf
+  1044
+  Followers
+  99 Today
+
+  @realnathanf
+  11k
+  Followers
+  1099 Today
+
+  Nathan F.
+  8239
+  Subscribers
+  144 Today
+
+
+
+  Overview - Today
+
+  Page Views
+  87
+  3%
+
+  Likes
+  52
+  2%
+
+  Likes
+  5462
+  2257%
+
+  Profile Views
+  52k
+  1375%
+
+  Retweets
+  117
+  303%
+
+  Likes
+  507
+  553%
+
+  Likes
+  107
+  19%
+
+  Total Views
+  1407
+  12%
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+  <script src="/src/js/app.js"></script>
+</body>
+</html>
