@@ -11,41 +11,39 @@ body {
 }
 .container {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .dashboard {
     width: 100%;
-    height: 100%;
 }
+
 
 /* HEADER DASHBOARD */
-
 .dashboard-header {
-    height: 30%;
     background-color: rgb(31, 33, 46);
     border-radius: 0 0 25px 25px;
-    padding: 2% 12%;
-    display: flex;
-    justify-content: space-between;
+    padding: 3% 12%;
+    height: 200px;
 }
 .t-followers {
+    margin-top: 1%;
     opacity: .6;
     font-size: 14px;
 }
+.hr-header {
+    margin: 5% 0;
+    opacity: .1;
+}
 .dw-mode-div {
     display: flex;
+    justify-content: space-between;
 }
 .mode-label {
-    margin: 3% 15px;
+    margin: 1% 0;
     opacity: .6;
 }
 #dw-mode {
-    align-self: baseline;
-    width: 3rem;
-    height: 1.6rem;
+    width: 55px;
+    height: 26px;
     appearance: none;
     background-image: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
     background-color: rgb(174, 179, 203);
@@ -63,27 +61,26 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    margin: 3px 0.3%;
+    margin: 3px 0 3px 5px;
     border-radius: 50%;
     background-color: rgb(37, 42, 65);
     transition: .5s;
 }
 #dw-mode:checked::before {
-    margin-left: 1.5rem;
+    margin: 3px 5px 3px 30px ;
 }
 
-/* SOCIAL CARDS */
 
+/* SOCIAL CARDS */
 .card-grid {
     width: 100%;
-    height: 150px;
-    padding: 0 12%;
+    margin-top: -5%;
+    padding: 0 12% 25% 12%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 3%;
 }
 .social-card {
-    margin: -40% 0 20% 0;
     background-color: rgb(37, 42, 65);
     text-align: center;
     border-radius: 5px;
@@ -137,16 +134,15 @@ body {
     color: rgb(220, 65, 76);
 }
 
-/* OVERVIEW DASHBOARD */
 
+/* OVERVIEW DASHBOARD */
 .overview-container {
-        width: 100%;
-        padding: 0 12%;
-        margin-top: -1%;
+    width: 100%;
+    padding: 5% 12% 65% 12%;
 }
 .overview-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 3%;
     margin-top: 2%;
 }
@@ -181,7 +177,53 @@ body {
     vertical-align: middle;
     margin-right: 5px;
 }
+.attribution {
+    text-align: center;
+    padding: 1% 1% 0 1%;
+}
 
+/* DESKTOP MEDIA */
+@media (min-width:768px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dashboard-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hr-header {
+        display: none;
+    }
+    .dw-mode-div {
+        display: flex;
+    }
+    .dw-mode {
+        align-self: stretch;
+    }
+    .mode-label {
+        margin: 5px 15px;
+    }
+    /*SOCIAL CARDS*/
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 12% 0 12%;
+    }
+    /* OVERVIEW DASHBOARD */
+    .overview-container {
+        width: 100%;
+        padding: 2% 12% 0 12%;
+    }
+    .overview-grid {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 1%;
+    }
+}
+
+
+/* LIGHT MODE */
 /*  WHITE MODE */
 
 .body-white {
@@ -190,32 +232,13 @@ body {
 }
 .dashboard-header-white {
     background-color: rgb(245, 247, 255);
-    height: 30%;
     border-radius: 0 0 25px 25px;
-    padding: 2% 12%;
+    padding: 3% 12%;
+    height: 200px;
     display: flex;
     justify-content: space-between;
 }
 .white-card {
     background-color: rgb(245, 247, 255);
     box-shadow: 28rem 0 rgb(245, 247, 255) inset !important;
-}
-
-@media (max-width:992px) {
-    .card-grid {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
-        margin-top: -15%;
-    }
-    .social-card {
-        margin: 0 0 5% 0;
-    }
-    .overview-grid {
-        margin-top: 10%;
-        margin-bottom: 80%;
-        grid-template-columns: 1fr;
-    }
-    .overview-container {
-        margin-top: 190%;
-    }
 }
