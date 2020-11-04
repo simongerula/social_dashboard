@@ -177,10 +177,6 @@ body {
     vertical-align: middle;
     margin-right: 5px;
 }
-.attribution {
-    text-align: center;
-    padding-top: 10px;
-}
 
 /* DESKTOP MEDIA */
 @media (min-width:768px) {
